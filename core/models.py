@@ -15,3 +15,6 @@ class Evento(models.Model):
         
     def __str__(self):
         return self.titulo
+    
+    def get_data_evento(self):  #para imprimir a data de uma maneira melhor, mais bonita
+        return self.data_evento.strftime('%d/%m/%Y %H:%M Hrs')
